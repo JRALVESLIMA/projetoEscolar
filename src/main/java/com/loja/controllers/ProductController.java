@@ -216,7 +216,7 @@ public class ProductController {
                 expirationDate = LocalDate.parse(expirationDateField.getText(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
             }
         } catch (DateTimeParseException e) {
-            System.out.println("Formato de data de vencimento inválido. Use o formato dd/MM/yyyy.");
+            showAlert("Formato de data de vencimento inválido.", " Use o formato dd/MM/yyyy.");
             return;
         }
 
@@ -224,7 +224,7 @@ public class ProductController {
         try {
             quantity = Integer.parseInt(quantityField.getText());
         } catch (NumberFormatException e) {
-            System.out.println("Quantidade inválida.");
+            showAlert("Quantidade inválida.", "Adicione a Quantidade correta");
             return;
         }
 
@@ -232,12 +232,12 @@ public class ProductController {
         try {
             unitPrice = Double.parseDouble(unitPriceField.getText());
         } catch (NumberFormatException e) {
-            System.out.println("Preço unitário inválido.");
+            showAlert("Preço unitário inválido.", "Adicione o preço no formato correto. (Sem ponto, Nem Virgula)");
             return;
         }
 
         if (expirationDate == null) {
-            System.out.println("Data de vencimento é obrigatória.");
+            showAlert("Data de vencimento é obrigatória.", "Adicione a Data de Vencimento");
             return;
         }
 
@@ -246,6 +246,8 @@ public class ProductController {
 
         loadProducts();
         clearFields();
+
+
     }
 
     private void addProduct(Product product) {
@@ -265,6 +267,7 @@ public class ProductController {
         } catch (SQLException e) {
             System.out.println("Erro ao adicionar o produto: " + e.getMessage());
         }
+
     }
 
     private void clearFields() {
