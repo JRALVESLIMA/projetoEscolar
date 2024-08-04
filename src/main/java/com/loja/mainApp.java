@@ -25,7 +25,7 @@ public class mainApp extends Application {
             primaryStage.setTitle("Emporio São José");
 
             // tamanho desejado da janela
-            Scene scene = new Scene(root, 800, 800); // largura e altura desejadas
+            Scene scene = new Scene(root, 800, 800);
 
             // cena para o stage
             primaryStage.setScene(scene);

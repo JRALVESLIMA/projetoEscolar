@@ -158,7 +158,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <!-- Remover 'includeBaseDirectory' se não for necessário -->
+
                 </configuration>
                 <executions>
                     <execution>
@@ -185,7 +185,7 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/lib/javafx</outputDirectory>
                             <includeArtifactIds>javafx-base,javafx-controls,javafx-graphics,javafx-fxml</includeArtifactIds>
-                            <!-- Remover 'overWrite' se não for necessário -->
+
                         </configuration>
                     </execution>
                 </executions>
