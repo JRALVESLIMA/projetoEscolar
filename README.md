@@ -34,13 +34,13 @@ cd projetoEscolar
 ### **3️⃣ Configurar o banco de dados**
 1. Crie o banco de dados
 
-No PostgreSQL, rode o seguinte comando:
+   No PostgreSQL, rode o seguinte comando:
 ```sql
 CREATE DATABASE estoque_db;
 ```
 2. Atualize os dados de conexão no código
 
-No projeto, acesse o arquivo:
+   No projeto, acesse o arquivo:
 
 📂 src/main/java/com/loja/utils/Database.java
 
@@ -51,7 +51,7 @@ private static final String PASSWORD = "sua_senha";  // Coloque sua senha do Pos
 ```
 3. Crie a tabela no banco de dados
 
-No pgAdmin ou no terminal do PostgreSQL, execute o seguinte comando SQL:
+   No pgAdmin ou no terminal do PostgreSQL, execute o seguinte comando SQL:
 ```sql
 CREATE TABLE produtos (
     id SERIAL PRIMARY KEY,
