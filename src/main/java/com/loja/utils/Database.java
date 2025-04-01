@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class Database {
 
-    private static final String URL = "jdbc:postgresql://localhost:5432/********"; // Substitua as estrelas pela porta do banco de dados.
-    private static final String USER = "******"; // Substitua as estrelas pelo Nome do Usuario do Banco.
-    private static final String PASSWORD = "*******"; // Substitua as estrelas pela Senha do banco do usuario.
+    private static final String URL = "jdbc:postgresql://localhost:5432/estoque_db"; // Substitua o nome do banco caso seja sua preferencia.
+    private static final String USER = "seu_usuario"; // Substitua "seu_usuario" pelo Nome do Usuario do Banco.
+    private static final String PASSWORD = "sua senha"; // Substitua "sua senha" pela Senha do banco do usuario.
 
     static {
         try {
