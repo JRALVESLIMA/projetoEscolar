@@ -63,6 +63,7 @@ CREATE TABLE produtos (
     quantidade INT NOT NULL,
     fornecedor VARCHAR(255)
 );
+
 4️⃣ Rodar o projeto
 Abra o IntelliJ IDEA ou Eclipse
 
