@@ -41,7 +41,9 @@ CREATE DATABASE estoque_db;
 2. Atualize os dados de conexão no código
 
 No projeto, acesse o arquivo:
+
 📂 src/main/java/com/loja/utils/Database.java
+
 Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
 ```java
 private static final String USER = "seu_usuario";  // Coloque seu usuário do PostgreSQL
