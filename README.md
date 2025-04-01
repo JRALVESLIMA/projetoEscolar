@@ -1,5 +1,7 @@
 🏪 Sistema de Gerenciamento de Estoque
+
 🚀 Projeto desenvolvido durante a faculdade, utilizando Java e PostgreSQL.
+
 Este sistema permite o cadastro, atualização, remoção e listagem de produtos, ajudando na gestão de estoque de uma loja.
 
 🛠️ Tecnologias Utilizadas
@@ -15,12 +17,14 @@ Este sistema permite o cadastro, atualização, remoção e listagem de produtos
 ✅ Consulta de estoque em tempo real
 
 🚀 Como Rodar o Projeto
+
 1️⃣ Pré-requisitos
 Antes de iniciar, instale os seguintes programas:
 
 JDK 17+
 
 PostgreSQL
+
 
 2️⃣ Clonar o repositório
 Abra o terminal e execute:
@@ -33,6 +37,7 @@ Depois, entre na pasta do projeto:
 bash
 Copiar
 cd projetoEscolar
+
 3️⃣ Configurar o banco de dados
 Crie o banco de dados no PostgreSQL rodando o seguinte comando:
 
@@ -42,6 +47,7 @@ CREATE DATABASE estoque_db;
 Atualize os dados de conexão no código
 
 No projeto, acesse o arquivo:
+
 📂 src/main/java/com/loja/utils/Database.java
 
 Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
