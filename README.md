@@ -41,6 +41,7 @@ Copiar
 cd projetoEscolar
 
 3️⃣ Configurar o banco de dados
+
 Crie o banco de dados no PostgreSQL rodando o seguinte comando:
 
 sql
@@ -68,6 +69,7 @@ sql
 
 Copiar
 
+
 CREATE TABLE produtos (
     
     id SERIAL PRIMARY KEY,
@@ -83,6 +85,7 @@ CREATE TABLE produtos (
 );
 
 4️⃣ Rodar o projeto
+
 Abra o IntelliJ IDEA ou Eclipse
 
 Importe o projeto caso ainda não esteja aberto
@@ -92,8 +95,11 @@ Verifique as dependências
 Se estiver usando Maven, rode:
 
 bash
+
 Copiar
+
 mvn clean install
+
 Execute a classe principal
 
 Encontre o arquivo Main.java
