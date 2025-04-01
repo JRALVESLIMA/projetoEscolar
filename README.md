@@ -29,15 +29,9 @@ PostgreSQL
 2️⃣ Clonar o repositório
 Abra o terminal e execute:
 
-bash
-Copiar
-
 git clone https://github.com/JRALVESLIMA/projetoEscolar.git
 
 Depois, entre na pasta do projeto:
-
-bash
-
 
 cd projetoEscolar
 
@@ -45,10 +39,8 @@ cd projetoEscolar
 
 Crie o banco de dados no PostgreSQL rodando o seguinte comando:
 
-sql
-
-
 CREATE DATABASE estoque_db;
+
 Atualize os dados de conexão no código
 
 No projeto, acesse o arquivo:
@@ -57,9 +49,6 @@ No projeto, acesse o arquivo:
 
 Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
 
-java
-
-
 private static final String USER = "seu_usuario";  // Coloque seu usuário do PostgreSQL
 
 private static final String PASSWORD = "sua_senha";  // Coloque sua senha do PostgreSQL
@@ -67,8 +56,6 @@ private static final String PASSWORD = "sua_senha";  // Coloque sua senha do Pos
 Crie a tabela no banco de dados
 
 No pgAdmin ou no terminal do PostgreSQL, execute o seguinte comando SQL:
-
-sql
 
 
 CREATE TABLE produtos (
