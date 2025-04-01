@@ -42,9 +42,9 @@ CREATE DATABASE estoque_db;
 
    No projeto, acesse o arquivo:
 
-📂 src/main/java/com/loja/utils/Database.java
+   📂 src/main/java/com/loja/utils/Database.java
 
-Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
+    Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
 ```java
 private static final String USER = "seu_usuario";  // Coloque seu usuário do PostgreSQL
 private static final String PASSWORD = "sua_senha";  // Coloque sua senha do PostgreSQL
