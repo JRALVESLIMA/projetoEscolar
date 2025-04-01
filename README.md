@@ -31,13 +31,15 @@ Depois, entre na pasta do projeto:
 ```bash
 cd projetoEscolar
 ```
-### **3️⃣ Configurar o banco de dados
+### **3️⃣ Configurar o banco de dados**
 1. Crie o banco de dados
+
 No PostgreSQL, rode o seguinte comando:
 ```sql
 CREATE DATABASE estoque_db;
 ```
 2. Atualize os dados de conexão no código
+
 No projeto, acesse o arquivo:
 📂 src/main/java/com/loja/utils/Database.java
 Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
@@ -46,6 +48,7 @@ private static final String USER = "seu_usuario";  // Coloque seu usuário do Po
 private static final String PASSWORD = "sua_senha";  // Coloque sua senha do PostgreSQL
 ```
 3. Crie a tabela no banco de dados
+
 No pgAdmin ou no terminal do PostgreSQL, execute o seguinte comando SQL:
 ```sql
 CREATE TABLE produtos (
@@ -56,18 +59,21 @@ CREATE TABLE produtos (
     fornecedor VARCHAR(255)
 );
 ```
-### **4️⃣ Rodar o projeto
+### **4️⃣ Rodar o projeto**
 1. Abra o IntelliJ IDEA ou Eclipse
 
 2. Importe o projeto caso ainda não esteja aberto.
 
 3. Verifique as dependências
-    Se estiver usando Maven, rode:
+
+   Se estiver usando Maven, rode:
    ```bash
    mvn clean install
    ```
-4. Execute a classe principal
+5. Execute a classe principal
+
    Encontre o arquivo Main.java.
+
    Clique com o botão direito e selecione Run 'Main' ou simplesmente aperte Shift + F10 no IntelliJ.
 
 Se tudo estiver correto, o sistema será executado e começará a interagir com o banco de dados! 🚀
