@@ -31,7 +31,9 @@ Abra o terminal e execute:
 
 bash
 Copiar
+
 git clone https://github.com/JRALVESLIMA/projetoEscolar.git
+
 Depois, entre na pasta do projeto:
 
 bash
@@ -55,19 +57,29 @@ Substitua os valores de usuário e senha pelos seus dados do PostgreSQL:
 java
 Copiar
 private static final String USER = "seu_usuario";  // Coloque seu usuário do PostgreSQL
+
 private static final String PASSWORD = "sua_senha";  // Coloque sua senha do PostgreSQL
+
 Crie a tabela no banco de dados
 
 No pgAdmin ou no terminal do PostgreSQL, execute o seguinte comando SQL:
 
 sql
+
 Copiar
+
 CREATE TABLE produtos (
+    
     id SERIAL PRIMARY KEY,
+    
     nome VARCHAR(255) NOT NULL,
+    
     preco DECIMAL(10,2) NOT NULL,
+    
     quantidade INT NOT NULL,
+    
     fornecedor VARCHAR(255)
+
 );
 
 4️⃣ Rodar o projeto
